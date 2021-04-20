@@ -25,6 +25,11 @@ describe('GET ALL CARDS', () => {
     expect(response.body).to.be.an('array');
   });
 
+  // test fall
+  it('should be string', () => {
+    expect(response.body).to.be.an('string');
+  });
+
   it('should return 200 response 2', async () => {
     let isError = false;
 
